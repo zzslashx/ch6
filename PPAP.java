@@ -13,16 +13,14 @@ public class PPAP {
        
     }
 
-    public static String ppap(String str) {
-		
-        int comma = str.indexOf(",");
-        String object1 = str.substring(9, comma);
+public static String ppap(String str) {
+    int comma = str.indexOf(",");
+    String object1 = str.substring(9, comma);
 
-        int second = str.lastIndexOf("I have an ");
-        String object2 = str.substring(second+1 + 8);
+    int second = str.lastIndexOf("I have a ");
+    int period = str.lastIndexOf(".");
+    String object2 = str.substring(second + 9, period);
 
-        
-
-        return "Uh! " + object2+object1;
-    }
+    return "Uh! " + object2 + object1;
+}
 }
