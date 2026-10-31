@@ -1,8 +1,10 @@
+import java.util.Scanner;
 public class Palindrome{
 	public static void main(String[] args){
-		
-		
-		System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Type a string to see if it is a palindrome or not: ");
+		String input = scanner.nextLine();
+		System.out.println(isPalindrome(input));
 		}
 	public static boolean isPalindrome(String str){
 		String backwards ="";
